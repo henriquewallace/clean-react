@@ -1,5 +1,14 @@
 {
-  "extends": "standard-with-typescript",
+  "settings": {
+    "react": {
+      "version": "dete]"
+    }
+  },
+  "extends": [
+    "standard-with-typescript",
+    "plugin:react/recommended"
+  ],
+  "plugins": ["react"],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
@@ -11,6 +20,8 @@
     "@typescript-eslint/no-misused-promises": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
     "@typescript-eslint/no-confusing-void-expression": "off",
-    "@typescript-eslint/unbound-method": "off"
+    "@typescript-eslint/unbound-method": "off",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error"
   }
 }
